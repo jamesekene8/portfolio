@@ -1,0 +1,690 @@
+doctype html
+// Mirrored from exill.dk/demo/codex/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Aug 2021 12:53:47 GMT
+// Added by HTTrack
+meta(http-equiv='content-type' content='text/html;charset=UTF-8')
+// /Added by HTTrack
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  // Title
+  title Portfolio
+  // Description
+  meta(name='description' content=' Personal Portfolio / Resume / CV / vCard Template')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Favicons
+  link(rel='apple-touch-icon' sizes='180x180' href='img/favicons/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='img/favicons/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='img/favicons/favicon-16x16.png')
+  // Web fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i' rel='stylesheet')
+  // CSS vendors
+  link(rel='stylesheet' href='css/bootstrap-custom.css')
+  link(rel='stylesheet' href='css/ionicons.min.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='css/simplebar.min.css')
+  link(rel='stylesheet' href='css/jquery.mb.YTPlayer.min.css')
+  // Main CSS
+  link(rel='stylesheet' href='css/main.css')
+  // CSS Color scheme
+  link#color-scheme(rel='stylesheet' href='css/colors/main-red.css')
+  // Custom CSS (Add your custom CSS styles to this file)
+  link(rel='stylesheet' href='css/custom.css')
+  // removeIf(customizerDist)
+  link(rel='stylesheet' href='../customizer/main.css')
+  // endremoveIf(customizerDist)
+// Preloader
+.preloader
+  .preloader-block
+    .preloader-icon
+      span.loading-dot.loading-dot-1
+      span.loading-dot.loading-dot-2
+      span.loading-dot.loading-dot-3
+.main-wrapper
+  // Sidebar
+  header
+    nav.navbar.d-md-block.d-lg-none.fixed-top.mobile-navbar
+      button.navbar-toggler.mr-auto(type='button' data-toggle='collapse' data-target='#mobileNavbarSupportedContent' aria-controls='mobileNavbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.nav-btn Menu
+      #mobileNavbarSupportedContent.collapse.navbar-collapse.order-1
+        ul.navbar-nav.mr-auto
+    nav.sidebar(data-simplebar='')
+      .sidebar-header
+        a(href='#home' data-scroll='')
+          img.img-fluid.sidebar-avatar(src='img/pic2.jpeg' alt='Profile avatar')
+        span.sidebar-name James Uguna
+        p.sidebar-status Available for work
+      .sidebar-menu
+        ul.list-unstyled.list-menu
+          li
+            a.nav-link(href='#home-area' data-scroll='') Home
+          li
+            a.nav-link(href='#about-area' data-scroll='') About
+          li
+            a.nav-link(href='#services-area' data-scroll='') Services
+          li
+            a.nav-link(href='#portfolio-area' data-scroll='') Portfolio
+          li
+            a.nav-link(href='#testimonials-area' data-scroll='') Clients
+        //-   li
+        //-     a.nav-link(href='#blog-area' data-scroll='') Blog
+          li
+            a.nav-link(href='#contact-area' data-scroll='') Contact
+  .sections-wrapper
+    // Sections
+    // Home
+    section#home-area.home-area.element-cover-bg(style='background-image:url(img/home2.jpg)')
+      .container.h-100
+        .row.h-100.align-items-center.justify-content-center
+          .col-12.col-lg-8.home-content.text-center
+            h1.home-name
+              | James 
+              span Uguna
+            h4.cd-headline.clip.home-headline
+              | I&rsquo;m a 
+              span.cd-words-wrapper.single-headline
+                b.is-visible Developer
+                b Designer
+                b Freelancer
+          a(href='#about-area' data-scroll='')
+            .home-mouse
+              .mouse-shape
+                .mouse-wheel
+    // About
+    section#about-area.single-section.about-area
+      .container
+        .row
+          .col-12
+            .section-heading
+              h2.section-title About me
+              p.section-description Get to know me
+        .row.align-items-center
+          // Picture part
+          .col-12.col-lg-5.about-img
+            img.img-fluid.img-thumbnail(src='img/pic2.jpeg' alt='About Picture')
+          // Content part
+          .col-12.col-lg-7.about-content
+            .content-block
+              h2.content-subtitle Who am i?
+              h6.content-title I&apos;m James Uguna, a software developer
+              .content-description
+                p
+                  | I am a freelancer based in the Lagos, Nigeria and i have been building noteworthy websites for years, which comply with the latest design trends. I help build quality web apps for people. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.
+              address.content-info
+                .row
+                  .col-12.col-md-6.single-info
+                    span Name:
+                    p James Uguna
+                  .col-12.col-md-6.single-info
+                    span Email:
+                    p
+                      a(href='mailto:jamesekene8@example.com') jamesekene8@example.com
+                .row
+                  .col-12.col-md-6.single-info
+                    span Age:
+                    p #{new Date().getFullYear() - 1997}
+                  .col-12.col-md-6.single-info
+                    span From:
+                    p Lagos, Nigeria
+              a.btn.content-download.button-main.button-scheme(href='cv_file/complete_cv.pdf' role='button') Download CV
+              a.btn.content-work.button-main(data-scroll='' href='#portfolio-area' role='button') My Work
+    // Services
+    section#services-area.single-section.alt-bg.services-area
+      .container
+        .row
+          .col-12
+            .section-heading
+              h2.section-title My Services
+              p.section-description Services i offer to my clients
+        .row
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service
+              i.icon.service-icon.ion-logo-css3
+              h6.service-title Design Trends
+              p.service-description I create quality websites from scratch based on Trend
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service
+              i.icon.service-icon.ion-md-images
+              h6.service-title PSD Design
+              p.service-description I can build a website based on the design provided.
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service
+              i.icon.service-icon.ion-logo-ionic
+              h6.service-title Customer Support
+              p.service-description I provide 24hrs customer support for my clients.
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service.mb-lg-0
+              i.icon.service-icon.ion-logo-wordpress
+              h6.service-title Web Development
+              p.service-description I build and maintain websites for my clients on a 24hrs basis.
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service.mb-md-0
+              i.icon.service-icon.ion-md-move
+              h6.service-title Fully Responsive
+              p.service-description My websites are fully responsive on both Mobile and Desktop.
+          // Single service
+          .col-12.col-md-6.col-lg-4
+            .single-service.mb-0
+              i.icon.service-icon.ion-ios-rocket
+              h6.service-title Branding
+              p.service-description I provide branding services for my clients also.
+    // Hire
+    section#hire-area.single-section.element-cover-bg.hire-area(style='background-image:url(img/hire.jpg)')
+      .container
+        .row.row-custom
+          .col-12.col-md-8.content-part
+            h1.hire-title Let&apos;s work together!
+            p.hire-description I am available for freelance projects. Hire me and get your project done.
+          .col-12.col-md-4.button-part
+            a.btn.hire-btn.button-main.button-scheme(data-scroll='' href='#contact-area' role='button') Hire me
+    // Portfolio
+    section#portfolio-area.single-section.portfolio-area
+      .container
+        .row
+          .col-12
+            .section-heading
+              h2.section-title Portfolio
+              p.section-description Showcasing some of my best work
+        .row
+          // Filter nav
+          .col-12
+            ul.list-inline.filter-control(role='group' aria-label='Filter Control')
+              li.list-inline-item.tab-active(data-filter='*') All
+            //-   li.list-inline-item(data-filter='.brand') Brand
+            //-   li.list-inline-item(data-filter='.design') Design
+            //-   li.list-inline-item(data-filter='.photos') Photos
+        // Thumbnail list
+        .portfolio-grid.row
+          // Single item
+          .single-item.col-6.col-lg-4.design
+            a.portfolio-item(href='#item-1')
+              .portfolio-wrapper
+                img.img-fluid(alt='Item' src='img/proj-1.jpg')
+                .item-content
+                  h6.content-title Xero Hotels
+                  span.content-more More Info
+          // Single item
+        //-   .single-item.col-6.col-lg-4.photos
+        //-     a.portfolio-item(href='#item-2')
+        //-       .portfolio-wrapper
+        //-         img.img-fluid(alt='Item' src='img/item-2.jpg')
+        //-         .item-content
+        //-           h6.content-title 3D Bag Mockup
+        //-           span.content-more More Info
+        //-   // Single item
+        //-   .single-item.col-6.col-lg-4.design
+        //-     a.portfolio-item(href='#item-3')
+        //-       .portfolio-wrapper
+        //-         img.img-fluid(alt='Item' src='img/item-3.jpg')
+        //-         .item-content
+        //-           h6.content-title Modern Bag Design
+        //-           span.content-more More Info
+        //-   // Single item
+        //-   .single-item.col-6.col-lg-4.brand
+        //-     a.portfolio-item(href='#item-4')
+        //-       .portfolio-wrapper.mb-lg-0
+        //-         img.img-fluid(alt='Item' src='img/item-4.jpg')
+        //-         .item-content
+        //-           h6.content-title Coffee Cup Design
+        //-           span.content-more More Info
+        //-   // Single item
+        //-   .single-item.col-6.col-lg-4.brand
+        //-     a.portfolio-item(href='#item-5')
+        //-       .portfolio-wrapper.mb-0
+        //-         img.img-fluid(alt='Item' src='img/item-5.jpg')
+        //-         .item-content
+        //-           h6.content-title T-Shirt Design
+        //-           span.content-more More Info
+        //-   // Single item
+        //-   .single-item.col-6.col-lg-4.photos
+        //-     a.portfolio-item(href='#item-6')
+        //-       .portfolio-wrapper.mb-0
+        //-         img.img-fluid(alt='Item' src='img/item-6.jpg')
+        //-         .item-content
+        //-           h6.content-title Packaging Box Mockup
+        //-           span.content-more More Info
+      // Single lightbox
+      #item-1.lightbox-wrapper
+        .f-basis-100
+          .lightbox-close(data-modal-close='')
+            span.close-btn
+              span.btn-line
+        .container
+          .row
+            .col-12.col-lg-5
+              .lightbox-gallery.owl-carousel.owl-theme
+                img.img-fluid.item-img(alt='Item' src='img/proj-1.jpg')
+                img.img-fluid.item-img(alt='Item' src='img/proj-1.1.jpg')
+                //- img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+                //- img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+                //- img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+                //- img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+            .col-12.col-lg-7
+              .lightbox-content
+                h3.content-title Label Tag Mockup
+                .content-description
+                  p
+                    | Xero Hotel is a website where you can rent an apartments from. It shows different apartments and their different locations. It shows details about the apartment and also, the details of the realtor who posted such apartment.
+                  p
+                    | On this website, you can make payments for the apartment really fast. This website makes it easy for people to rent apartments without being physically present.
+                ul.list-inline.content-info
+                  li.list-inline-item.single-info
+                    span Client:
+                    p Personal Project
+                  li.list-inline-item.single-info
+                    span Categories:
+                    p
+                      a(href='#0') Web Development
+                      | , 
+                      a(href='#0') Web Design
+                  li.list-inline-item.single-info
+                    span Date:
+                    p 12 May, 2021
+                  li.list-inline-item.single-info
+                    span Technologies:
+                    p HTML5, CSS, JS, NODEJS
+                a.btn.content-btn.button-main.button-scheme(href='https://xerohotels.herokuapp.com/' role='button' target="_blank") Visit Project
+      // Single lightbox
+    //-   #item-2.lightbox-wrapper
+    //-     .f-basis-100
+    //-       .lightbox-close(data-modal-close='')
+    //-         span.close-btn
+    //-           span.btn-line
+    //-     .container
+    //-       .row
+    //-         .col-12.col-lg-5
+    //-           .lightbox-gallery.owl-carousel.owl-theme
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-2.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-1.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+    //-         .col-12.col-lg-7
+    //-           .lightbox-content
+    //-             h3.content-title 3D Bag Mockup
+    //-             .content-description
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+    //-             ul.list-inline.content-info
+    //-               li.list-inline-item.single-info
+    //-                 span Client:
+    //-                 p Envato
+    //-               li.list-inline-item.single-info
+    //-                 span Categories:
+    //-                 p
+    //-                   a(href='#0') Branding
+    //-                   | , 
+    //-                   a(href='#0') Web Design
+    //-               li.list-inline-item.single-info
+    //-                 span Date:
+    //-                 p 12 May, 2019
+    //-               li.list-inline-item.single-info
+    //-                 span Technologies:
+    //-                 p HTML5, SCSS, JS
+    //-             a.btn.content-btn.button-main.button-scheme(href='#0' role='button') Visit Project
+    //-   // Single lightbox
+    //-   #item-3.lightbox-wrapper
+    //-     .f-basis-100
+    //-       .lightbox-close(data-modal-close='')
+    //-         span.close-btn
+    //-           span.btn-line
+    //-     .container
+    //-       .row
+    //-         .col-12.col-lg-5
+    //-           .lightbox-gallery.owl-carousel.owl-theme
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-1.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-2.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+    //-         .col-12.col-lg-7
+    //-           .lightbox-content
+    //-             h3.content-title Modern Bag Design
+    //-             .content-description
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+    //-             ul.list-inline.content-info
+    //-               li.list-inline-item.single-info
+    //-                 span Client:
+    //-                 p Envato
+    //-               li.list-inline-item.single-info
+    //-                 span Categories:
+    //-                 p
+    //-                   a(href='#0') Branding
+    //-                   | , 
+    //-                   a(href='#0') Web Design
+    //-               li.list-inline-item.single-info
+    //-                 span Date:
+    //-                 p 12 May, 2019
+    //-               li.list-inline-item.single-info
+    //-                 span Technologies:
+    //-                 p HTML5, SCSS, JS
+    //-             a.btn.content-btn.button-main.button-scheme(href='#0' role='button') Visit Project
+    //-   // Single lightbox
+    //-   #item-4.lightbox-wrapper
+    //-     .f-basis-100
+    //-       .lightbox-close(data-modal-close='')
+    //-         span.close-btn
+    //-           span.btn-line
+    //-     .container
+    //-       .row
+    //-         .col-12.col-lg-5
+    //-           .lightbox-gallery.owl-carousel.owl-theme
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-1.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-2.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+    //-         .col-12.col-lg-7
+    //-           .lightbox-content
+    //-             h3.content-title Coffee Cup Design
+    //-             .content-description
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+    //-             ul.list-inline.content-info
+    //-               li.list-inline-item.single-info
+    //-                 span Client:
+    //-                 p Envato
+    //-               li.list-inline-item.single-info
+    //-                 span Categories:
+    //-                 p
+    //-                   a(href='#0') Branding
+    //-                   | , 
+    //-                   a(href='#0') Web Design
+    //-               li.list-inline-item.single-info
+    //-                 span Date:
+    //-                 p 12 May, 2019
+    //-               li.list-inline-item.single-info
+    //-                 span Technologies:
+    //-                 p HTML5, SCSS, JS
+    //-             a.btn.content-btn.button-main.button-scheme(href='#0' role='button') Visit Project
+    //-   // Single lightbox
+    //-   #item-5.lightbox-wrapper
+    //-     .f-basis-100
+    //-       .lightbox-close(data-modal-close='')
+    //-         span.close-btn
+    //-           span.btn-line
+    //-     .container
+    //-       .row
+    //-         .col-12.col-lg-5
+    //-           .lightbox-gallery.owl-carousel.owl-theme
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-1.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-2.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+    //-         .col-12.col-lg-7
+    //-           .lightbox-content
+    //-             h3.content-title T-Shirt Design
+    //-             .content-description
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+    //-             ul.list-inline.content-info
+    //-               li.list-inline-item.single-info
+    //-                 span Client:
+    //-                 p Envato
+    //-               li.list-inline-item.single-info
+    //-                 span Categories:
+    //-                 p
+    //-                   a(href='#0') Branding
+    //-                   | , 
+    //-                   a(href='#0') Web Design
+    //-               li.list-inline-item.single-info
+    //-                 span Date:
+    //-                 p 12 May, 2019
+    //-               li.list-inline-item.single-info
+    //-                 span Technologies:
+    //-                 p HTML5, SCSS, JS
+    //-             a.btn.content-btn.button-main.button-scheme(href='#0' role='button') Visit Project
+    //-   // Single lightbox
+    //-   #item-6.lightbox-wrapper
+    //-     .f-basis-100
+    //-       .lightbox-close(data-modal-close='')
+    //-         span.close-btn
+    //-           span.btn-line
+    //-     .container
+    //-       .row
+    //-         .col-12.col-lg-5
+    //-           .lightbox-gallery.owl-carousel.owl-theme
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-6.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-1.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-2.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-3.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-4.jpg')
+    //-             img.img-fluid.item-img(alt='Item' src='img/item-5.jpg')
+    //-         .col-12.col-lg-7
+    //-           .lightbox-content
+    //-             h3.content-title Packaging Box Mockup
+    //-             .content-description
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo sint?
+    //-               p
+    //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odio voluptatibus, dignissimos nisi consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+    //-             ul.list-inline.content-info
+    //-               li.list-inline-item.single-info
+    //-                 span Client:
+    //-                 p Envato
+    //-               li.list-inline-item.single-info
+    //-                 span Categories:
+    //-                 p
+    //-                   a(href='#0') Branding
+    //-                   | , 
+    //-                   a(href='#0') Web Design
+    //-               li.list-inline-item.single-info
+    //-                 span Date:
+    //-                 p 12 May, 2019
+    //-               li.list-inline-item.single-info
+    //-                 span Technologies:
+    //-                 p HTML5, SCSS, JS
+    //-             a.btn.content-btn.button-main.button-scheme(href='#0' role='button') Visit Project
+    // Testimonials
+    section#testimonials-area.single-section.testimonials-area.alt-bg
+      .container
+        .row
+          .col-12
+            .section-heading
+              h2.section-title Testimonials
+              p.section-description What my clients think about me
+        .owl-carousel.owl-theme
+          // Single review
+          .single-review
+            i.icon.ion-md-quote.review-icon
+            p.review-content
+              | James did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.
+            img.client-avatar(src='img/client-1.jpg' alt='Review avatar')
+            span.client-name Maria Wilson
+          // Single review
+          .single-review
+            i.icon.ion-md-quote.review-icon
+            p.review-content
+              | All the bugs I had previously are all gone. James really did an excellent job. 
+            img.client-avatar(src='img/client-2.jpg' alt='Review avatar')
+            span.client-name John Santana
+          // Single review
+          .single-review
+            i.icon.ion-md-quote.review-icon
+            p.review-content
+              | This is the second time I have worked with James and he didnt disappoint. He is always on it when it comes to delivery.
+            img.client-avatar(src='img/client-3.jpg' alt='Review avatar')
+            span.client-name Julia Sakura
+          // Single review
+        //-   .single-review
+        //-     i.icon.ion-md-quote.review-icon
+        //-     p.review-content
+        //-       | Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.
+        //-     img.client-avatar(src='img/client-1.jpg' alt='Review avatar')
+        //-     span.client-name Maria Wilson
+          // Single review
+        //-   .single-review
+        //-     i.icon.ion-md-quote.review-icon
+        //-     p.review-content
+        //-       | Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.
+        //-     img.client-avatar(src='img/client-2.jpg' alt='Review avatar')
+        //-     span.client-name John Santana
+          // Single review
+          .single-review
+            i.icon.ion-md-quote.review-icon
+            p.review-content
+              | Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.
+            img.client-avatar(src='img/client-3.jpg' alt='Review avatar')
+            span.client-name Julia Sakura
+    // Blog
+    //- section#blog-area.single-section.blog-area
+    //-   .container
+    //-     .row
+    //-       .col-12
+    //-         .section-heading
+    //-           h2.section-title My Blog
+    //-           p.section-description Check out my latest blog posts
+    //-     .row.justify-content-center
+    //-       // Single post
+    //-       .col-12.col-sm-8.col-lg-4
+    //-         .card.single-post
+    //-           a.post-img(href='#0')
+    //-             img.card-img-top(src='img/post-1.jpg' alt='Blog post')
+    //-             span.content-date 15 Nov, 19
+    //-           .card-body.post-content
+    //-             a(href='#0')
+    //-               h5.card-title.content-title Top tools for Photographers
+    //-             p.card-text.content-description
+    //-               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+    //-             .content-tags
+    //-               span.tags-title Tags:
+    //-               ul.list-unstyled.list-inline.tags-list
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Photography
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Freelance
+    //-       // Single post
+    //-       .col-12.col-sm-8.col-lg-4
+    //-         .card.single-post
+    //-           a.post-img(href='#0')
+    //-             img.card-img-top(src='img/post-2.jpg' alt='Blog post')
+    //-             span.content-date 8 Aug, 19
+    //-           .card-body.post-content
+    //-             a(href='#0')
+    //-               h5.card-title.content-title Take a tour of my office
+    //-             p.card-text.content-description
+    //-               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+    //-             .content-tags
+    //-               span.tags-title Tags:
+    //-               ul.list-unstyled.list-inline.tags-list
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Events
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Personal
+    //-       // Single post
+    //-       .col-12.col-sm-8.col-lg-4
+    //-         .card.single-post
+    //-           a.post-img(href='#0')
+    //-             img.card-img-top(src='img/post-3.jpg' alt='Blog post')
+    //-             span.content-date 11 Dec, 18
+    //-           .card-body.post-content
+    //-             a(href='#0')
+    //-               h5.card-title.content-title How i became a Web Designer
+    //-             p.card-text.content-description
+    //-               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.
+    //-             .content-tags
+    //-               span.tags-title Tags:
+    //-               ul.list-unstyled.list-inline.tags-list
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Web Design
+    //-                 li.list-inline-item
+    //-                   a(href='#0') Freelance
+    // Contact
+    section#contact-area.single-section.contact-area.alt-bg
+      .container
+        .row
+          .col-12
+            .section-heading
+              h2.section-title Get in Touch
+              p.section-description Feel free to contact me anytime
+        .row
+          // Contact form
+          .col-12
+            form#contact-form.contact-form(action='http://exill.dk/demo/codex/template/php/contact.php')
+              .row
+                .col-12.col-md-6.form-group
+                  input#contact-name.form-control(type='text' name='name' placeholder='Name' required='')
+                .col-12.col-md-6.form-group
+                  input#contact-email.form-control(type='email' name='email' placeholder='Email' required='')
+                .col-12.form-group
+                  input#contact-subject.form-control(type='text' name='subject' placeholder='Subject' required='')
+                .col-12.form-group.form-message
+                  textarea#contact-message.form-control(name='message' placeholder='Message' rows='5' required='')
+                .col-12.form-submit
+                  button#contact-submit.btn.button-main.button-scheme(type='submit') Send message
+                  p.contact-feedback
+    // Footer
+    footer.footer-area.single-section
+      .container
+        .row.contact-info
+          .col-12.col-sm-4
+            .single-info
+              i.info-icon.icon.ion-md-map
+              p.info-content
+                a(href='https://www.google.com/maps/place/Lagos+Island/@6.453571,3.4042309,14z/data=!3m1!4b1!4m5!3m4!1s0x103bf4cc9b07cf55:0xc4ae10b395418b9b!8m2!3d6.4548791!4d3.4245984' target='_blank') Lagos, Nigeria
+          .col-12.col-sm-4
+            .single-info
+              i.info-icon.icon.ion-md-call
+              p.info-content
+                a(href='tel:+2348133007906') +2348133007906
+          .col-12.col-sm-4
+            .single-info
+              i.info-icon.icon.ion-md-send
+              p.info-content
+                a(href='mailto:jamesekene8@example.com') jamesekene8@example.com
+        .row.mini-footer
+          .social-medias.col-12.col-lg-5
+            a.twitter(href='#0')
+              i.icon.ion-logo-twitter
+            a.instagram(href='https://www.instagram.com/ugunajames/')
+              i.icon.ion-logo-instagram
+            a.linkedin(href='https://www.linkedin.com/in/james-uguna-32a7b81b4/')
+              i.icon.ion-logo-linkedin
+            a.youtube(href='#0')
+              i.icon.ion-logo-youtube
+            a.github(href='#0')
+              i.icon.ion-logo-github
+            a.facebook(href='https://github.com/jamesekene8')
+              i.icon.ion-logo-facebook
+//-           p.copyright-notice.col-12.col-lg-7
+//-             | Copyright &copy; 2019 CardX, all rights reserved. Developed by 
+//-             a(href='https://themeforest.net/user/exill' target='_blank') Exill
+//-             | .
+//- // removeIf(customizerDist)
+
+// endremoveIf(customizerDist)
+// Scripts
+script(src='js/jquery.min.js')
+script(src='js/bootstrap.bundle.min.js')
+script(src='js/isotope.pkgd.min.js')
+script(src='js/animatedModal.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/simplebar.min.js')
+script(src='js/jquery.mb.YTPlayer.min.js')
+script(src='js/particles.js')
+script(src='js/main.js')
+// Custom JS (Add your custom JS scripts to this file)
+script(src='js/custom.js')
+// removeIf(customizerDist)
+script(src='../customizer/main.js')
+// endremoveIf(customizerDist)
+// Mirrored from exill.dk/demo/codex/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Aug 2021 12:54:49 GMT
